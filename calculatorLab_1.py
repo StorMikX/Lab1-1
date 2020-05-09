@@ -1,7 +1,15 @@
 calculator = True
 while calculator:
-    val_1 = int(input("Введите число: "))
-    val_2 = int(input("Введите число: "))
+    try:
+        val_1 = int(input("Введите число: "))
+    except ValueError:
+        print("Некорректный ввод числа")
+        continue
+    try:    
+        val_2 = int(input("Введите число: "))
+    except ValueError:
+        print("Ошибка: Не корректный ввод")
+        continue
     operator = input("Введите операцию: ")
     if operator == "+":
         result = val_1 + val_2

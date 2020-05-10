@@ -8,7 +8,7 @@ while calculator:
     try:    
         val_2 = int(input("Введите число: "))
     except ValueError:
-        print("Ошибка: Не корректный ввод")
+        print("Некорректный ввод числа")
         continue
     operator = input("Введите операцию: ")
     if operator == "+":

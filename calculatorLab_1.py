@@ -1,12 +1,12 @@
 calculator = True
 while calculator:
     try:
-        val_1 = int(input("Введите число: "))
+        val_1 = float(input("Введите число: "))
     except ValueError:
         print("Некорректный ввод числа")
         continue
     try:    
-        val_2 = int(input("Введите число: "))
+        val_2 = float(input("Введите число: "))
     except ValueError:
         print("Некорректный ввод числа")
         continue
